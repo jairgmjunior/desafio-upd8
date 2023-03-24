@@ -1,0 +1,5 @@
+1 - Pode executar os arquivos de SQL ou Gerar através do Migrator do EntityFramework
+2 - Realizado a construção de uma arquitetura que pode ser adaptada para um CQRS posteriormente, tentei utilizar boas praticas arquiteturais nas apis e no web.
+3 - A API de cliente está documentada no swagger
+4 - A Minimal API de cidades não foi documentada pois não era o foco do desafio
+5 - obs. Tudo com um determinado tempo pode ser melhorado =)

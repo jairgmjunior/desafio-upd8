@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Upd8.Core.Shared</name>
+    </assembly>
+    <members>
+        <member name="T:Upd8.Core.Shared.ViewModels.NovoClienteViewModel">
+            <summary>
+            Objeto utilizado para inclusão de um novo cliente
+            </summary>
+        </member>
+        <member name="P:Upd8.Core.Shared.ViewModels.NovoClienteViewModel.Nome">
+            <summary>
+            Nome do Cliente
+            </summary>
+            <example>João da Silva e Silva</example>
+        </member>
+        <member name="P:Upd8.Core.Shared.ViewModels.NovoClienteViewModel.CPF">
+            <summary>
+            CPF do Cliente (Apenas Número)
+            </summary>
+            <example>78457889746</example>
+        </member>
+        <member name="P:Upd8.Core.Shared.ViewModels.NovoClienteViewModel.DataNascimento">
+            <summary>
+            Data de Nascimento do cliente
+            </summary>
+            <example>1991-12-31</example>
+        </member>
+        <member name="P:Upd8.Core.Shared.ViewModels.NovoClienteViewModel.Sexo">
+            <summary>
+            Sexo do Cliente (M or F)
+            </summary>
+            <example>M</example>
+        </member>
+        <member name="P:Upd8.Core.Shared.ViewModels.NovoEnderecoViewModel.Complemento">
+            <summary>
+            Descrição do Endereço do Cliente
+            </summary>
+            <example>Rua 9 de julho</example>
+        </member>
+        <member name="P:Upd8.Core.Shared.ViewModels.NovoEnderecoViewModel.CodigoIbge">
+            <summary>
+            Codigo do IBGE da Cidade
+            </summary>
+            <example>5101407</example>
+        </member>
+    </members>
+</doc>

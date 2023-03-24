@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Upd8.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Upd8.Api.Controllers.ClienteController.Get">
+            <summary>
+            Retorna todos clientes cadastrados na base.
+            </summary>
+        </member>
+        <member name="M:Upd8.Api.Controllers.ClienteController.Get(System.Int32)">
+            <summary>
+            Retorna um cliente consultado pelo id.
+            </summary>
+            <param name="id" example="123">Id do cliente</param>
+        </member>
+        <member name="M:Upd8.Api.Controllers.ClienteController.Post(Upd8.Core.Shared.ViewModels.NovoClienteViewModel)">
+            <summary>
+            Insere um novo cliente
+            </summary>
+            <param name="client"></param>
+        </member>
+        <member name="M:Upd8.Api.Controllers.ClienteController.Put(Upd8.Core.Shared.ViewModels.AtualizaClienteViewModel)">
+            <summary>
+            Atualiza um cliente
+            </summary>
+            <param name="client"></param>
+        </member>
+        <member name="M:Upd8.Api.Controllers.ClienteController.Delete(System.Int32)">
+            <summary>
+            Deleta um cliente pelo Id
+            </summary>
+            <param name="id"></param>
+            <remarks>Ao excluir um cliente o mesmo será removido permanentemente da base</remarks>
+        </member>
+    </members>
+</doc>

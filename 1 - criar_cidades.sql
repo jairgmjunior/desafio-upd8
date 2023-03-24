@@ -1,0 +1,23 @@
+USE [DB_Upt8]
+GO
+
+/****** Object:  Table [dbo].[Cidades]    Script Date: 24/03/2023 09:12:13 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Cidades](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[CodigoIbge] [nvarchar](7) NOT NULL,
+	[Nome] [nvarchar](100) NOT NULL,
+	[Estado] [nvarchar](2) NOT NULL,
+ CONSTRAINT [PK_Cidades] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+

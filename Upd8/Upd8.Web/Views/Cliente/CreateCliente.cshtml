@@ -1,0 +1,90 @@
+﻿@model ClienteViewModel
+<link href="~/css/select2.css" rel="stylesheet" />
+<link href="~/css/select2-bootstrap.css" rel="stylesheet" />
+<link href="~/css/site.css" rel="stylesheet" />
+
+<div class="text-center">
+    <img src="/images/logo.png" class="img-fluid" asp-append-version="true" />
+    <h3>Cadastro de Clientes</h3>
+</div>
+
+<form asp-action="CreateCliente">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="row">
+        <div class="col-2">
+            <div class="form-group">
+                <label asp-for="CPF" class="form-control-label"></label>
+                <input asp-for="CPF" class="form-control" />
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="form-group">
+                <label asp-for="Nome" class="form-control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="form-group">
+                <label asp-for="DataNascimento" class="form-control-label"></label>
+                <input asp-for="DataNascimento" class="form-control" />
+            </div>
+        </div>
+        <div class="col-3 sexo">
+            <div class="form-group">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" asp-for="IsMasculino" value="true" checked="checked">
+                    <label class="form-check-label" for="inlineRadio1">Masculino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" asp-for="IsMasculino" value="false">
+                    <label class="form-check-label" for="inlineRadio2">Feminino</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <div class="form-group required">
+                <label asp-for="Estado" class="form-control-label"></label>
+                <select asp-for="Estado" asp-items="@Html.GetEnumSelectList(typeof(EEStado))" class="form-control full-width">
+                    <option value="">Selecione</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="form-group required">
+                <label asp-for="CodigoIbge" class="form-control-label"></label>
+                <select asp-for="CodigoIbge" class="form-control full-width" data-init-plugin="select2">
+                </select>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="form-group">
+                <label asp-for="Complemento" class="form-control-label"></label>
+                <input asp-for="Complemento" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top:20px">
+        <div class="col-md-3">
+            <button id="submit" class="btn btn-success" type="submit">
+                <i class="fa fa-chevron-down"></i>
+                Salvar
+            </button>
+            <button id="limpar" class="btn btn-danger" type="button">
+                <i class="fa fa-trash"></i>
+                Limpar
+            </button>
+        </div>
+    </div>
+
+</form>
+<script src="~/js/jquery.min.js"></script>
+<script src="~/js/select2.min.js"></script>
+<script src="~/js/jquery.mask.js"></script>
+
+<script>
+
+ var _Model = @Json.Serialize(Model);
+
+</script>
